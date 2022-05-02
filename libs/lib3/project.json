@@ -1,0 +1,23 @@
+{
+  "root": "libs/lib3",
+  "sourceRoot": "libs/lib3/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/lib3/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/lib3"],
+      "options": {
+        "jestConfig": "libs/lib3/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

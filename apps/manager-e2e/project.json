@@ -1,0 +1,28 @@
+{
+  "root": "apps/manager-e2e",
+  "sourceRoot": "apps/manager-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/manager-e2e/cypress.json",
+        "devServerTarget": "manager:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "manager:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/manager-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["manager"]
+}

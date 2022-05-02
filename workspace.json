@@ -1,4 +1,12 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "lib1": "libs/lib1",
+    "lib2": "libs/lib2",
+    "lib3": "libs/lib3",
+    "lib4": "libs/lib4",
+    "manager": "apps/manager",
+    "manager-e2e": "apps/manager-e2e",
+    "my-new-lib": "libs/my-new-lib"
+  }
 }

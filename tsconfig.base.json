@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@happynrwl/ui-components": ["libs/my-new-lib/src/index.ts"],
+      "@nx-framework-practise/lib1": ["libs/lib1/src/index.ts"],
+      "@nx-framework-practise/lib2": ["libs/lib2/src/index.ts"],
+      "@nx-framework-practise/lib3": ["libs/lib3/src/index.ts"],
+      "@nx-framework-practise/lib4": ["libs/lib4/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
