@@ -21,6 +21,11 @@ const Lib4 = dynamic(
   {ssr: false, loading: () => <p>Loading...</p>}
 )
 
+const Lib4_1 = dynamic(
+  () => import("@nx-framework-practise/lib4").then((mod) => mod.Lib4_1),
+  {ssr: false, loading: () => <p>Loading...</p>}
+)
+
 
 const StyledPage = styled.div`
   .page {
@@ -39,6 +44,7 @@ export function Index() {
       <Lib2/>
       <Lib3/>
       <Lib4/>
+      <Lib4_1/>
     </StyledPage>
   );
 }
